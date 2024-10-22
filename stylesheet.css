@@ -1,0 +1,102 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    all: unset; /* This is the best css property I've ever seen */
+}
+
+body {
+    background-color: black;
+    margin: 15px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, p {
+    color: blanchedalmond;
+}
+
+.cursor {
+    display: flex;
+    color: greenyellow;
+}
+
+.cliInput {
+    color: greenyellow;
+    font-size: 1.3em;
+    align-content: center;
+    margin-right: 2px;
+}
+
+#cli {
+    position: absolute;
+    top: -1000px;
+    left: 0px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    cursor: default;
+}
+
+header > div > h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+header > div > .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5em;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: row;
+    cursor: text;
+    width: 100%;
+}
+
+.inputDiv > span {
+    font-size: 1.2em;
+    font-family: Arial;
+    margin-right: 2em;
+}
+  
+  /* animation styles */
+  .cursor-blink.blinking {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    31% {
+      opacity: 0;
+    }
+    70% {
+        opacity: 0
+    }
+    71% {
+        opacity: 1;
+    }
+  }
+
+header > .menu {
+    display: flex;
+    gap: 1em;
+}
+
+main {
+    margin-top: 6em;
+}
